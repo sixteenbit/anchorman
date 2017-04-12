@@ -1,0 +1,430 @@
+@mixin inline-base() {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  outline: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@mixin inline-fade-in-bg($base-color: #0069ff, $border-width: 1px) {
+  border-bottom: $border-width solid rgba($base-color, 0.4);
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: rgba($base-color, 0);
+    background-color: rgba($base-color, 0.1);
+  }
+}
+
+@mixin inline-slide-up($base-color: #0069ff) {
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateY(95%);
+    background-color: rgba($base-color, 0.2);
+    transition: transform 0.2s;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin inline-slide-right($base-color: #0069ff) {
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0.618) translateX(-100%);
+    background: rgba($base-color, 0.4);
+    transition: transform 0.3s;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      transform: scaleY(0.618) translateX(0);
+    }
+  }
+}
+
+@mixin inline-scale-up($base-color: #0069ff, $radius: 5px) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    z-index: -1;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    opacity: 0;
+    transform: scale(0);
+    border-radius: $radius;
+    background-color: $base-color;
+    transition: transform 0.2s, opacity 0.2s;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@mixin inline-scale-up-bounce($base-color: #0069ff) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    z-index: -1;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    opacity: 0;
+    transform: scale(0);
+    background-color: $base-color;
+    transition: transform 0.2s, opacity 0.2s;
+    transition-timing-function: cubic-bezier($base-color, 1.39);
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@mixin inline-scale-down($base-color: #0069ff, $radius: 5px) {
+  transition: color 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.1);
+    border-radius: $radius;
+    background-color: rgba($base-color, 1);
+    transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+      transform: scaleX(1) scaleY(0.618);
+      background-color: rgba($base-color, 0);
+    }
+  }
+}
+
+@mixin inline-flip($base-color: #0069ff) {
+  transition: color 0.3s;
+  perspective: 600px;
+  perspective-origin: 50% 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    z-index: -1;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 4px;
+    content: '';
+  }
+
+  &::before {
+    transform: rotateX(90deg);
+    transform-origin: 50% 100%;
+    background-color: $base-color;
+    transition: transform 0.2s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      transform: rotateX(0deg);
+    }
+  }
+
+  &::after {
+    border-bottom: 2px solid $base-color;
+  }
+}
+
+@mixin inline-border($base-color: #0069ff) {
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(0.8333);
+
+    &::before {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    opacity: 0;
+    transform: scale(0.8333);
+    border: 2px solid $base-color;
+    transition: opacity 0.2s, transform 0.2s;
+    content: '';
+  }
+}
+
+@mixin inline-skewed($base-color: #0069ff) {
+  transition: color 0.2s;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    z-index: -1;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    opacity: 0;
+    transform: skewY(-3deg) skewX(-11deg);
+    background: $base-color;
+    transition: transform 0.2s, opacity 0.2s;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+      transform: skewY(0) skewX(0);
+    }
+  }
+}
+
+@mixin inline-text-up-line($base-color: #0069ff, $border-width: 2px) {
+  transition: transform 0.3s;
+  transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    transform: translateY(10%);
+
+    &::before {
+      transform: translateY(-100%) translateY($border-width);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%) translateY(-$border-width);
+    background: $base-color;
+    transition: transform 0.3s;
+    transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+    content: '';
+  }
+}
+
+@mixin inline-tip-overlay($base-color: #0069ff, $tip-background: #fff, $border-width: 1px) {
+  &::before {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    padding: 24px;
+    opacity: 0.2;
+    transform: scale(0.5);
+    transition: opacity 0.3s, color 0.3s, transform 0.3s, background-position 0.2s;
+    content: attr(href);
+    font-size: 50%;
+    font-weight: bold;
+    line-height: 1;
+    color: transparent;
+    white-space: pre-wrap;
+    word-break: break-all;
+    pointer-events: auto;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+      transform: scale(1) translateY(-75%);
+      border: $border-width solid $base-color;
+      background: $tip-background;
+      transition-delay: 0s, 0s, 0s, 0.1s;
+      color: $base-color;
+    }
+  }
+}
+
+@mixin inline-border-right($base-color: #0069ff, $background: #fff, $border-width: 5px) {
+  padding: 0 $border-width;
+  transform: translateX(0);
+  transition: transform 0.3s;
+
+  &:hover,
+  &::after {
+    transform: translateX(-1em);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    height: 100%;
+    content: '';
+  }
+
+  &::before {
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background: $background;
+  }
+
+  &::after {
+    left: 100%;
+    z-index: -2;
+    width: $border-width;
+    background: $base-color;
+    transition: transform 0.3s;
+    text-align: center;
+    pointer-events: auto;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: translateX(0);
+    }
+  }
+}
+
+@mixin inline-curtain($base-color: #0069ff) {
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    content: '';
+  }
+
+  &::before {
+    transform: translateY(calc(100% - 2px));
+    border-top: 2px solid $base-color;
+    background: transparent;
+    transition-delay: 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      transform: translateX(0);
+    }
+
+    &::before {
+      transition-delay: 0s;
+    }
+
+    &::after {
+      transition-delay: 0.3s;
+    }
+  }
+
+  &::after {
+    z-index: -1;
+    transform: translateY(-100%);
+    background: rgba($base-color, 0.7);
+  }
+}
+
+@mixin inline-braces() {
+  padding: 0 5px;
+  transition: color 0.2s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    font-size: 125%;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  &::before {
+    left: -0.1em;
+    transform: translateX(-100%);
+    content: '[';
+  }
+
+  &::after {
+    right: -0.1em;
+    transform: translateX(100%);
+    content: ']';
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

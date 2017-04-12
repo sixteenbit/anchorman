@@ -1,0 +1,88 @@
+a {
+  @include base-link($brand-color);
+}
+
+.inline {
+  @include inline-base;
+}
+
+.fade-in-background {
+  @include inline-fade-in-bg;
+}
+
+.slide-up {
+  @include inline-slide-up;
+}
+
+.slide-right {
+  @include inline-slide-right;
+}
+
+.scale-up {
+  @include inline-scale-up;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.scale-up-bounce {
+  @include inline-scale-up-bounce;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.scale-down {
+  @include inline-scale-down;
+}
+
+.flip {
+  @include inline-flip;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.border {
+  @include inline-border;
+}
+
+.skewed {
+  @include inline-skewed;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.text-up-line {
+  @include inline-text-up-line;
+}
+
+.tip-overlay {
+  @include inline-tip-overlay;
+}
+
+.border-right {
+  @include inline-border-right;
+}
+
+.curtain {
+  @include inline-curtain;
+
+  &:hover,
+  &:focus {
+    color: $brand-secondary-color;
+  }
+}
+
+.braces {
+  @include inline-braces;
+}

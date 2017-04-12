@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.site-header {
+  padding: 20px 15px;
+  background-color: $brand-color;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    color: $brand-secondary-color;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    color: $light-grey;
+  }
+}

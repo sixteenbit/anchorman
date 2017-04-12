@@ -1,0 +1,23 @@
+// Anchorman 0.1.0
+// https://github.com/mrdink/anchorman
+// Copyright 2017 Sixteenbit LLC
+// MIT License
+@mixin base-link($anchor-color: #0069ff, $anchor-hover-color: darken($anchor-color, 15%)) {
+  outline: none;
+  color: $anchor-color;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: $anchor-hover-color;
+  }
+
+  &::before,
+  &::after {
+    font-smoothing: antialiased;
+    pointer-events: none;
+    backface-visibility: hidden;
+  }
+}
+
+@import 'anchorman/types/inline';

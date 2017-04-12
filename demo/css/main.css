@@ -1,0 +1,1152 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+	font-family: sans-serif;
+	/* 1 */
+	line-height: 1.15;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	/* 3 */
+	-webkit-text-size-adjust: 100%;
+	/* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+	margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+	/* 1 */
+	display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+	background-color: transparent;
+	/* 1 */
+	-webkit-text-decoration-skip: objects;
+	/* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+	border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+	/* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	display: inline-block;
+	/* 1 */
+	vertical-align: baseline;
+	/* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+	display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+	display: none;
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+body {
+	background-color: #fff;
+	font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #222;
+}
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+a {
+	outline: none;
+	color: #0d6aeb;
+	white-space: nowrap;
+}
+
+a:hover, a:focus {
+	color: #0949a3;
+}
+
+a::before, a::after {
+	font-smoothing: antialiased;
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+.inline {
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	outline: none;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.fade-in-background {
+	border-bottom: 1px solid rgba(0, 105, 255, 0.4);
+	-webkit-transition: background-color 0.3s, border-color 0.3s;
+	-o-transition: background-color 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.fade-in-background:hover, .fade-in-background:focus {
+	border-color: rgba(0, 105, 255, 0);
+	background-color: rgba(0, 105, 255, 0.1);
+}
+
+.slide-up {
+	overflow: hidden;
+}
+
+.slide-up::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateY(95%);
+	    -ms-transform: translateY(95%);
+	     -o-transform: translateY(95%);
+	        transform: translateY(95%);
+	background-color: rgba(0, 105, 255, 0.2);
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: -o-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	content: '';
+}
+
+.slide-up:hover::before, .slide-up:focus::before {
+	-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+.slide-right {
+	overflow: hidden;
+}
+
+.slide-right::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scaleY(0.618) translateX(-100%);
+	    -ms-transform: scaleY(0.618) translateX(-100%);
+	     -o-transform: scaleY(0.618) translateX(-100%);
+	        transform: scaleY(0.618) translateX(-100%);
+	background: rgba(0, 105, 255, 0.4);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+	content: '';
+}
+
+.slide-right:hover::before, .slide-right:focus::before {
+	-webkit-transform: scaleY(0.618) translateX(0);
+	    -ms-transform: scaleY(0.618) translateX(0);
+	     -o-transform: scaleY(0.618) translateX(0);
+	        transform: scaleY(0.618) translateX(0);
+}
+
+.scale-up::before {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	z-index: -1;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	opacity: 0;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);
+	        transform: scale(0);
+	border-radius: 5px;
+	background-color: #0069ff;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+	-o-transition: opacity 0.2s, -o-transform 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	content: '';
+}
+
+.scale-up:hover::before, .scale-up:focus::before {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
+.scale-up:hover, .scale-up:focus {
+	color: #fff;
+}
+
+.scale-up-bounce::before {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	z-index: -1;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	opacity: 0;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);
+	        transform: scale(0);
+	background-color: #0069ff;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+	-o-transition: opacity 0.2s, -o-transform 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	-webkit-transition-timing-function: cubic-bezier(#0069ff, 1.39);
+	     -o-transition-timing-function: cubic-bezier(#0069ff, 1.39);
+	        transition-timing-function: cubic-bezier(#0069ff, 1.39);
+	content: '';
+}
+
+.scale-up-bounce:hover::before, .scale-up-bounce:focus::before {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
+.scale-up-bounce:hover, .scale-up-bounce:focus {
+	color: #fff;
+}
+
+.scale-down {
+	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.scale-down::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+	border-radius: 5px;
+	background-color: #0069ff;
+	-webkit-transition: opacity 0.2s, background-color 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, background-color 0.2s, -webkit-transform 0.2s;
+	-o-transition: opacity 0.2s, background-color 0.2s, -o-transform 0.2s;
+	transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+	transition: transform 0.2s, opacity 0.2s, background-color 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	content: '';
+}
+
+.scale-down:hover::before, .scale-down:focus::before {
+	opacity: 1;
+	-webkit-transform: scaleX(1) scaleY(0.618);
+	    -ms-transform: scaleX(1) scaleY(0.618);
+	     -o-transform: scaleX(1) scaleY(0.618);
+	        transform: scaleX(1) scaleY(0.618);
+	background-color: rgba(0, 105, 255, 0);
+}
+
+.flip {
+	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+	-webkit-perspective: 600px;
+	        perspective: 600px;
+	-webkit-perspective-origin: 50% 100%;
+	        perspective-origin: 50% 100%;
+}
+
+.flip::before, .flip::after {
+	position: absolute;
+	top: 0;
+	left: -4px;
+	z-index: -1;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+	padding: 0 4px;
+	content: '';
+}
+
+.flip::before {
+	-webkit-transform: rotateX(90deg);
+	        transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 100%;
+	    -ms-transform-origin: 50% 100%;
+	     -o-transform-origin: 50% 100%;
+	        transform-origin: 50% 100%;
+	background-color: #0069ff;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: -o-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	     -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.flip:hover::before, .flip:focus::before {
+	-webkit-transform: rotateX(0deg);
+	        transform: rotateX(0deg);
+}
+
+.flip::after {
+	border-bottom: 2px solid #0069ff;
+}
+
+.flip:hover, .flip:focus {
+	color: #fff;
+}
+
+.border {
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: -o-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+}
+
+.border:hover, .border:focus {
+	-webkit-transform: scale(0.8333);
+	    -ms-transform: scale(0.8333);
+	     -o-transform: scale(0.8333);
+	        transform: scale(0.8333);
+}
+
+.border:hover::before, .border:focus::before {
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	     -o-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+
+.border::before {
+	position: absolute;
+	top: -2px;
+	left: -7px;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	opacity: 0;
+	-webkit-transform: scale(0.8333);
+	    -ms-transform: scale(0.8333);
+	     -o-transform: scale(0.8333);
+	        transform: scale(0.8333);
+	border: 2px solid #0069ff;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+	-o-transition: opacity 0.2s, -o-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	content: '';
+}
+
+.skewed {
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.skewed::before {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	z-index: -1;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	opacity: 0;
+	-webkit-transform: skewY(-3deg) skewX(-11deg);
+	    -ms-transform: skewY(-3deg) skewX(-11deg);
+	     -o-transform: skewY(-3deg) skewX(-11deg);
+	        transform: skewY(-3deg) skewX(-11deg);
+	background: #0069ff;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+	-o-transition: opacity 0.2s, -o-transform 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	content: '';
+}
+
+.skewed:hover::before, .skewed:focus::before {
+	opacity: 1;
+	-webkit-transform: skewY(0) skewX(0);
+	    -ms-transform: skewY(0) skewX(0);
+	     -o-transform: skewY(0) skewX(0);
+	        transform: skewY(0) skewX(0);
+}
+
+.skewed:hover, .skewed:focus {
+	color: #fff;
+}
+
+.text-up-line {
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	     -o-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	        transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	overflow: hidden;
+}
+
+.text-up-line:hover, .text-up-line:focus {
+	-webkit-transform: translateY(10%);
+	    -ms-transform: translateY(10%);
+	     -o-transform: translateY(10%);
+	        transform: translateY(10%);
+}
+
+.text-up-line:hover::before, .text-up-line:focus::before {
+	-webkit-transform: translateY(-100%) translateY(2px);
+	    -ms-transform: translateY(-100%) translateY(2px);
+	     -o-transform: translateY(-100%) translateY(2px);
+	        transform: translateY(-100%) translateY(2px);
+}
+
+.text-up-line::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateY(100%) translateY(-2px);
+	    -ms-transform: translateY(100%) translateY(-2px);
+	     -o-transform: translateY(100%) translateY(-2px);
+	        transform: translateY(100%) translateY(-2px);
+	background: #0069ff;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	     -o-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	        transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	content: '';
+}
+
+.tip-overlay::before {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	padding: 24px;
+	opacity: 0.2;
+	-webkit-transform: scale(0.5);
+	    -ms-transform: scale(0.5);
+	     -o-transform: scale(0.5);
+	        transform: scale(0.5);
+	-webkit-transition: opacity 0.3s, color 0.3s, background-position 0.2s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, color 0.3s, background-position 0.2s, -webkit-transform 0.3s;
+	-o-transition: opacity 0.3s, color 0.3s, background-position 0.2s, -o-transform 0.3s;
+	transition: opacity 0.3s, color 0.3s, transform 0.3s, background-position 0.2s;
+	transition: opacity 0.3s, color 0.3s, transform 0.3s, background-position 0.2s, -webkit-transform 0.3s, -o-transform 0.3s;
+	content: attr(href);
+	font-size: 50%;
+	font-weight: bold;
+	line-height: 1;
+	color: transparent;
+	white-space: pre-wrap;
+	word-break: break-all;
+	pointer-events: auto;
+}
+
+.tip-overlay:hover::before, .tip-overlay:focus::before {
+	opacity: 1;
+	-webkit-transform: scale(1) translateY(-75%);
+	    -ms-transform: scale(1) translateY(-75%);
+	     -o-transform: scale(1) translateY(-75%);
+	        transform: scale(1) translateY(-75%);
+	border: 1px solid #0069ff;
+	background: #fff;
+	-webkit-transition-delay: 0s, 0s, 0s, 0.1s;
+	     -o-transition-delay: 0s, 0s, 0s, 0.1s;
+	        transition-delay: 0s, 0s, 0s, 0.1s;
+	color: #0069ff;
+}
+
+.border-right {
+	padding: 0 5px;
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+}
+
+.border-right:hover, .border-right::after {
+	-webkit-transform: translateX(-1em);
+	    -ms-transform: translateX(-1em);
+	     -o-transform: translateX(-1em);
+	        transform: translateX(-1em);
+}
+
+.border-right::before, .border-right::after {
+	position: absolute;
+	height: 100%;
+	content: '';
+}
+
+.border-right::before {
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	background: #fff;
+}
+
+.border-right::after {
+	left: 100%;
+	z-index: -2;
+	width: 5px;
+	background: #0069ff;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+	text-align: center;
+	pointer-events: auto;
+}
+
+.border-right:hover::after, .border-right:focus::after {
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+.curtain {
+	overflow: hidden;
+}
+
+.curtain::before, .curtain::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+	content: '';
+}
+
+.curtain::before {
+	-webkit-transform: translateY(calc(100% - 2px));
+	    -ms-transform: translateY(calc(100% - 2px));
+	     -o-transform: translateY(calc(100% - 2px));
+	        transform: translateY(calc(100% - 2px));
+	border-top: 2px solid #0069ff;
+	background: transparent;
+	-webkit-transition-delay: 0.3s;
+	     -o-transition-delay: 0.3s;
+	        transition-delay: 0.3s;
+}
+
+.curtain:hover::before, .curtain:hover::after, .curtain:focus::before, .curtain:focus::after {
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+.curtain:hover::before, .curtain:focus::before {
+	-webkit-transition-delay: 0s;
+	     -o-transition-delay: 0s;
+	        transition-delay: 0s;
+}
+
+.curtain:hover::after, .curtain:focus::after {
+	-webkit-transition-delay: 0.3s;
+	     -o-transition-delay: 0.3s;
+	        transition-delay: 0.3s;
+}
+
+.curtain::after {
+	z-index: -1;
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	     -o-transform: translateY(-100%);
+	        transform: translateY(-100%);
+	background: rgba(0, 105, 255, 0.7);
+}
+
+.curtain:hover, .curtain:focus {
+	color: #fed700;
+}
+
+.braces {
+	padding: 0 5px;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.braces::before, .braces::after {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+	-o-transition: opacity 0.2s, -o-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+	font-size: 125%;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.braces::before {
+	left: -0.1em;
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	     -o-transform: translateX(-100%);
+	        transform: translateX(-100%);
+	content: '[';
+}
+
+.braces::after {
+	right: -0.1em;
+	-webkit-transform: translateX(100%);
+	    -ms-transform: translateX(100%);
+	     -o-transform: translateX(100%);
+	        transform: translateX(100%);
+	content: ']';
+}
+
+.braces:hover::before, .braces:hover::after, .braces:focus::before, .braces:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+section {
+	position: relative;
+	z-index: 1;
+	/* needed for setting pseudo-element z-index */
+	padding: 60px 0;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+section .section-header {
+	width: 100%;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+section h3 {
+	margin-top: 48px;
+	font-weight: 400;
+}
+
+.site-header {
+	padding: 20px 15px;
+	background-color: #0d6aeb;
+	text-align: center;
+}
+
+.site-header h1 {
+	margin: 0;
+	color: #fed700;
+	text-transform: uppercase;
+}
+
+.site-header p {
+	margin: 0;
+	color: #ededed;
+}
+
+.site-footer {
+	padding: 40px 0;
+	background-color: #ededed;
+	font-size: 15px;
+	text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

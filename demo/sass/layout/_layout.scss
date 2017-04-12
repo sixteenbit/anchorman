@@ -1,0 +1,16 @@
+section {
+  position: relative;
+  z-index: 1; /* needed for setting pseudo-element z-index */
+  padding: 60px 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  .section-header {
+    @include container;
+  }
+
+  h3 {
+    margin-top: 48px;
+    font-weight: 400;
+  }
+}
