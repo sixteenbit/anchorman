@@ -24,6 +24,6 @@ module.exports = {
 				} )
 			]
 		},
-		src: 'demo/css/*.css'
+		src: 'docs/css/*.css'
 	}
 };

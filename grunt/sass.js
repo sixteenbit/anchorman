@@ -16,7 +16,7 @@ module.exports = {
 			outputStyle: 'expanded'
 		},
 		files: {
-			'demo/css/main.css': 'demo/sass/main.scss'
+			'docs/css/main.css': 'docs/sass/main.scss'
 		}
 	}
 };

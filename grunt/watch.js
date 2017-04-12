@@ -8,14 +8,14 @@ module.exports = {
 	 * @link https://www.npmjs.com/package/grunt-contrib-watch
 	 */
 	styles: {
-		files: ['core/anchorman/**/*.scss', 'demo/sass/**/*.scss'],
+		files: ['core/anchorman/**/*.scss', 'docs/sass/**/*.scss'],
 		tasks: ['styles']
 	},
 	browserSync: {
 		files: [
 			'*.html',
 			'Gruntfile.js',
-			'demo/css/*.css'
+			'docs/css/*.css'
 		],
 		options: {
 			watchTask: true

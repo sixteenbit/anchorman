@@ -6,5 +6,5 @@ module.exports = {
 	 *
 	 * @link https://www.npmjs.com/package/grunt-contrib-clean
 	 */
-	pre: ['demo/css/*.{css,map}']
+	pre: ['docs/css/*.{css,map}']
 };
