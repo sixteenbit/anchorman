@@ -20,3 +20,13 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+hr {
+  clear: both;
+  height: 0;
+  margin: 40px auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid $light-grey;
+  border-left: 0;
+}

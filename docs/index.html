@@ -6,61 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Anchorman</title>
     <link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/prism.css"/>
 </head>
 <body>
 
 <div class="page">
     <header class="site-header">
-        <h1>Anchorman</h1>
+        <h1><a href="https://github.com/mrdink/anchorman">Anchorman</a></h1>
 		<p>A Sass mixin library for your anchors.</p>
     </header>
+
+	<section>
+		<header class="section-header">
+			<h2>Getting Started</h2>
+		</header>
+
+		<div class="container">
+			<p>Add the dependency using <a href="https://bower.io/" class="inline fade-in">bower</a>:</p>
+			<p><code class="language-bash">bower install mrdink/anchorman</code></p>
+			<p>Import the mixins into your project:</p>
+			<p><code class="language-scss">@import bower_components/anchorman/core/anchorman;</code></p>
+			<p>Add a mixin to your anchors:</p>
+			<pre><code class="language-scss">a {
+	@include base-link;
+	@include inline-link;
+	@include inline-fade-in;
+}</code></pre>
+			<hr>
+		</div>
+	</section>
 
     <section>
         <header class="section-header">
             <h2>Inline links</h2>
         </header>
         <div class="container">
-			<h3><code>@mixin inline-fade-in-background();</code></h3>
-			<p>He had a voice that could make a <a href="#" class="inline fade-in-background">wolverine</a> purr and suits so fine they made <a href="#" class="inline fade-in-background">Sinatra</a> look like a hobo.</p>
+			<p><code class="language-scss">@mixin inline-fade-in();</code></p>
+			<p>He had a voice that could make a <a href="#" class="inline fade-in">wolverine</a> purr and suits so fine they made <a href="#" class="inline fade-in-background">Sinatra</a> look like a hobo.</p>
 
-			<h3><code>@mixin inline-slide-up();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-slide-up();</code></p>
 			<p>What? You pooped in the <a href="#" class="inline slide-up">refrigerator</a>? And you ate the whole wheel of cheese? How’d you do that? Heck, I’m not even mad; that’s amazing.</p>
 
-			<h3><code>@mixin inline-slide-right();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-slide-right();</code></p>
 			<p>I'm very important. I have many <a href="#" class="inline slide-right">leather-bound</a> books and my apartment smells of rich mahogany.</p>
 
-			<h3><code>@mixin inline-scale-up();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-scale-up();</code></p>
 			<p>I read somewhere their periods attract <a href="#" class="inline scale-up">bears</a>. Bears can smell the menstruation.</p>
 
-			<h3><code>@mixin inline-scale-up-bounce();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-scale-up-bounce();</code></p>
 			<p>Oh, I can barely lift my <a href="#" class="inline scale-up-bounce">right</a> arm ’cause I did so many. I don’t know if you heard me counting. I did over a thousand.</p>
 
-			<h3><code>@mixin inline-scale-down();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-scale-down();</code></p>
 			<p>I love scotch. <a href="#" class="inline scale-down">Scotchy</a> scotch scotch. Here it goes down, down into my belly.</p>
 
-			<h3><code>@mixin inline-flip();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-flip();</code></p>
 			<p>Discovered by the Germans in 1904, they named it San Diego, which of course in <a href="#" class="inline flip">German</a> means "a whale's vagina."</p>
 
-			<h3><code>@mixin inline-border();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-border();</code></p>
 			<p>It’s terrible. She has beautiful eyes, and her hair <a href="#" class="inline border">smells</a> like cinnamon!</p>
 
-			<h3><code>@mixin inline-skewed();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-skewed();</code></p>
 			<p>Baxter, is that you? Baxter! Bark <a href="#" class="inline skewed">twice</a> if you’re in Milwaukee.</p>
 
-			<h3><code>@mixin inline-text-up-line();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-text-up-line();</code></p>
 			<p>There were horses, and a man on fire, and I <a href="#" class="inline text-up-line">killed</a> a guy with a trident.</p>
 
-			<h3><code>@mixin inline-tip-overlay();</code></h3>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-tip-overlay();</code></p>
 			<p>You are a smelly pirate hooker. Why don’t you go back to your home on <a href="http://google.com" class="inline tip-overlay">Whore Island</a>?</p>
 
-			<h3><code>@mixin inline-border-right();</code></h3>
-			<p>Oh, I can barely lift my right arm 'cause I did so many. I don’t know if you heard me <a href="#" class="inline border-right">counting</a>. I did over a thousand.</p>
+			<hr>
 
-			<h3><code>@mixin inline-curtain();</code></h3>
+			<p><code class="language-scss">@mixin inline-border-right();</code></p>
+			<p>Oh, I can barely lift my <a href="#" class="inline border-right">right arm</a> 'cause I did so many. I don’t know if you heard me counting. I did over a thousand.</p>
+
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-curtain();</code></p>
 			<p>I’ll have a <a href="#" class="inline curtain">Manhattan</a>. And kick the vermouth to the side with a pair of steel-toed boots.</p>
 
-			<h3><code>@mixin inline-braces();</code></h3>
-			<p>Well if you were a man, I’d <a href="#" class="inline braces">punch</a> you. Punch you right in the mouth.</p>
+			<hr>
+
+			<p><code class="language-scss">@mixin inline-braces();</code></p>
+			<p>Well if you were a man, I'd <a href="#" class="inline braces">punch</a> you. Punch you right in the mouth.</p>
         </div>
     </section>
 
@@ -70,6 +117,8 @@
         </div>
     </footer>
 </div>
+
+<script src="js/prism.js"></script>
 
 </body>
 </html>

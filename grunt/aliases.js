@@ -7,6 +7,7 @@ module.exports = {
 		'clean:pre',
 		'sass',
 		'postcss:dev',
+		'concat',
 		'notify:styles'
 	]
 };

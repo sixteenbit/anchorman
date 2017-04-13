@@ -2,6 +2,8 @@
 // https://github.com/mrdink/anchorman
 // Copyright 2017 Sixteenbit LLC
 // MIT License
+
+// Base styles for anchors
 @mixin base-link($anchor-color: #0069ff, $anchor-hover-color: darken($anchor-color, 15%)) {
   outline: none;
   color: $anchor-color;

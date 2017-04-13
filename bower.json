@@ -1,0 +1,16 @@
+{
+  "name": "anchorman",
+  "title": "Anchorman",
+  "version": "0.1.0",
+  "main": "/",
+  "ignore": [
+    "**/.*",
+    "*.md",
+    "docs/sass/*",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "prism": "prismjs#^1.6.0"
+  }
+}

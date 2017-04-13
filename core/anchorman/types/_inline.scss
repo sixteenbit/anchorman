@@ -1,3 +1,4 @@
+// Base styles for inline anchors
 @mixin inline-base() {
   position: relative;
   display: inline-block;
@@ -7,7 +8,8 @@
   white-space: nowrap;
 }
 
-@mixin inline-fade-in-bg($base-color: #0069ff, $border-width: 1px) {
+// Mixin to add fade in animation to anchors
+@mixin inline-fade-in($base-color: #0069ff, $border-width: 1px) {
   border-bottom: $border-width solid rgba($base-color, 0.4);
   transition: background-color 0.3s, border-color 0.3s;
 
@@ -18,6 +20,7 @@
   }
 }
 
+// Mixin to add a slide up animation to anchors
 @mixin inline-slide-up($base-color: #0069ff) {
   overflow: hidden;
 
@@ -42,6 +45,7 @@
   }
 }
 
+// Mixin to add a slide right animation to anchors
 @mixin inline-slide-right($base-color: #0069ff) {
   overflow: hidden;
 
@@ -66,6 +70,7 @@
   }
 }
 
+// Mixin to add a scale up animation to anchors
 @mixin inline-scale-up($base-color: #0069ff, $radius: 5px) {
   &::before {
     position: absolute;
@@ -93,6 +98,7 @@
   }
 }
 
+// Mixin to add a scale up bounce animation to anchors
 @mixin inline-scale-up-bounce($base-color: #0069ff) {
   &::before {
     position: absolute;
@@ -120,6 +126,7 @@
   }
 }
 
+// Mixin to add a scale down animation to anchors
 @mixin inline-scale-down($base-color: #0069ff, $radius: 5px) {
   transition: color 0.3s;
 
@@ -148,6 +155,7 @@
   }
 }
 
+// Mixin to add a flip animation to anchors
 @mixin inline-flip($base-color: #0069ff) {
   transition: color 0.3s;
   perspective: 600px;
@@ -186,6 +194,7 @@
   }
 }
 
+// Mixin to add a border animation to anchors
 @mixin inline-border($base-color: #0069ff) {
   transition: transform 0.2s;
 
@@ -215,6 +224,7 @@
   }
 }
 
+// Mixin to add a skewed animation to anchors
 @mixin inline-skewed($base-color: #0069ff) {
   transition: color 0.2s;
 
@@ -243,6 +253,7 @@
   }
 }
 
+// Mixin to add a text up line animation to anchors
 @mixin inline-text-up-line($base-color: #0069ff, $border-width: 2px) {
   transition: transform 0.3s;
   transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
@@ -272,6 +283,7 @@
   }
 }
 
+// Mixin to add a tip overlay animation to anchors
 @mixin inline-tip-overlay($base-color: #0069ff, $tip-background: #fff, $border-width: 1px) {
   &::before {
     position: absolute;
@@ -306,6 +318,7 @@
   }
 }
 
+// Mixin to add a border right animation to anchors
 @mixin inline-border-right($base-color: #0069ff, $background: #fff, $border-width: 5px) {
   padding: 0 $border-width;
   transform: translateX(0);
@@ -348,6 +361,7 @@
   }
 }
 
+// Mixin to add a curtain animation to anchors
 @mixin inline-curtain($base-color: #0069ff) {
   overflow: hidden;
 
@@ -392,6 +406,7 @@
   }
 }
 
+// Mixin to add a braces animation to anchors
 @mixin inline-braces() {
   padding: 0 5px;
   transition: color 0.2s;

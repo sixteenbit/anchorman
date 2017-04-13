@@ -16,6 +16,7 @@ module.exports = {
 			outputStyle: 'expanded'
 		},
 		files: {
+			'docs/css/prism.css': ['bower_components/prism/themes/prism.css'],
 			'docs/css/main.css': 'docs/sass/main.scss'
 		}
 	}

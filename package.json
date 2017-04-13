@@ -25,6 +25,7 @@
 		"grunt-contrib-clean": "latest",
 		"grunt-contrib-watch": "latest",
 		"grunt-notify": "latest",
+    "grunt-contrib-concat": "latest",
 		"grunt-postcss": "latest",
 		"grunt-sass": "latest"
 	}

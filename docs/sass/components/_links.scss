@@ -6,8 +6,8 @@ a {
   @include inline-base;
 }
 
-.fade-in-background {
-  @include inline-fade-in-bg;
+.fade-in {
+  @include inline-fade-in;
 }
 
 .slide-up {

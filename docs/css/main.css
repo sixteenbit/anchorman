@@ -470,6 +470,16 @@ html {
 	        box-sizing: inherit;
 }
 
+hr {
+	clear: both;
+	height: 0;
+	margin: 40px auto;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #ededed;
+	border-left: 0;
+}
+
 body {
 	background-color: #fff;
 	font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -520,14 +530,14 @@ a::before, a::after {
 	white-space: nowrap;
 }
 
-.fade-in-background {
+.fade-in {
 	border-bottom: 1px solid rgba(0, 105, 255, 0.4);
 	-webkit-transition: background-color 0.3s, border-color 0.3s;
 	-o-transition: background-color 0.3s, border-color 0.3s;
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
-.fade-in-background:hover, .fade-in-background:focus {
+.fade-in:hover, .fade-in:focus {
 	border-color: rgba(0, 105, 255, 0);
 	background-color: rgba(0, 105, 255, 0.1);
 }
@@ -1106,7 +1116,7 @@ section {
 	position: relative;
 	z-index: 1;
 	/* needed for setting pseudo-element z-index */
-	padding: 60px 0;
+	padding: 24px 0;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
@@ -1134,8 +1144,25 @@ section h3 {
 
 .site-header h1 {
 	margin: 0;
-	color: #fed700;
 	text-transform: uppercase;
+}
+
+.site-header h1 > a {
+	outline: none;
+	color: #fed700;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.site-header h1 > a:hover, .site-header h1 > a:focus {
+	color: #b29600;
+}
+
+.site-header h1 > a::before, .site-header h1 > a::after {
+	font-smoothing: antialiased;
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
 }
 
 .site-header p {
