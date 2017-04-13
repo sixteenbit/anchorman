@@ -480,6 +480,14 @@ hr {
 	border-left: 0;
 }
 
+.ron {
+	display: block;
+	margin-right: auto;
+	margin-bottom: 24px;
+	margin-left: auto;
+	border-radius: 100%;
+}
+
 body {
 	background-color: #fff;
 	font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
