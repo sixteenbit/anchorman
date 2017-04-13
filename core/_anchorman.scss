@@ -3,10 +3,13 @@
 // Copyright 2017 Sixteenbit LLC
 // MIT License
 
+$primary-color: #0069ff;
+
 // Base styles for anchors
-@mixin base-link($anchor-color: #0069ff, $anchor-hover-color: darken($anchor-color, 15%)) {
+@mixin base-anchor($anchor-color: $primary-color, $anchor-hover-color: darken($anchor-color, 15%)) {
   outline: none;
   color: $anchor-color;
+  text-decoration: none;
   white-space: nowrap;
 
   &:hover,

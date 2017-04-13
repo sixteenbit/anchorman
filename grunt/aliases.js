@@ -5,6 +5,7 @@ module.exports = {
 	],
 	'styles': [
 		'clean:pre',
+		'copy',
 		'sass',
 		'postcss:dev',
 		'concat',

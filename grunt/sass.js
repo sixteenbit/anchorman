@@ -16,7 +16,8 @@ module.exports = {
 			outputStyle: 'expanded'
 		},
 		files: {
-			'docs/css/prism.css': ['bower_components/prism/themes/prism.css'],
+			'docs/css/prism.css': 'bower_components/prism/themes/prism.css',
+			'docs/css/font-awesome.css': 'bower_components/font-awesome/scss/font-awesome.scss',
 			'docs/css/main.css': 'docs/sass/main.scss'
 		}
 	}

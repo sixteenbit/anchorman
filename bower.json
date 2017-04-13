@@ -11,6 +11,7 @@
     "package.json"
   ],
   "dependencies": {
-    "prism": "prismjs#^1.6.0"
+    "prism": "prismjs#^1.6.0",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }

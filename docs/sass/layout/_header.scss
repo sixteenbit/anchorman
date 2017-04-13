@@ -11,13 +11,21 @@
     text-transform: uppercase;
 
     & > a {
-      @include base-link($brand-secondary-color);
+      @include base-anchor($brand-secondary-color);
       text-decoration: none;
     }
   }
 
   p {
-    margin: 0;
+    margin: 0 0 24px;
     color: $light-grey;
+  }
+
+  nav {
+    & > a {
+      @include base-anchor($light-grey);
+      padding: 0 15px;
+      font-size: 24px;
+    }
   }
 }

@@ -1,5 +1,5 @@
 a {
-  @include base-link($brand-color);
+  @include base-anchor($brand-color);
 }
 
 .inline {
